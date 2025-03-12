@@ -1,0 +1,133 @@
+[
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Auction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SothbeysKillerApi.Controllers.AuctionCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Auction/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Auction/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "SothbeysKillerApi.Controllers.AuctionUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Auction/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "Active",
+    "RelativePath": "api/v1/Auction/Active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "Future",
+    "RelativePath": "api/v1/Auction/Future",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.AuctionController",
+    "Method": "Past",
+    "RelativePath": "api/v1/Auction/Past",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.UserController",
+    "Method": "Signin",
+    "RelativePath": "api/v1/User/Signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SothbeysKillerApi.Controllers.UserSigninRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SothbeysKillerApi.Controllers.UserController",
+    "Method": "Signup",
+    "RelativePath": "api/v1/User/Signup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SothbeysKillerApi.Controllers.UserCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
