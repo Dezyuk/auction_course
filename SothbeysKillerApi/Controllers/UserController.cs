@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SothbeysKillerApi.Services;
 
 namespace SothbeysKillerApi.Controllers;
 
 public record UserCreateRequest(string Name, string Email, string Password);
 public record UserSigninRequest(string Email, string Password);
-public record UserSigninRespons(Guid Id, string Name, string Email);
+public record UserSigninResponse(Guid Id, string Name, string Email);
 
 public class User
 {
@@ -17,88 +18,48 @@ public class User
 
 
 [ApiController]
-[Route("api/v1/[controller]")]
+[Route("api/v1/[controller]/[action]")]
 public class UserController : ControllerBase
 {
 
-    private static List<User> _users = [];
+    private readonly IUserService _userService;
 
-    [HttpPost]
-    [Route("[action]")]
-    public IActionResult Signup(UserCreateRequest request)
+    public UserController(IUserService userService)
     {
-
-        if (string.IsNullOrWhiteSpace(request.Name) || request.Name.Length < 3 || request.Name.Length > 60)
-        {
-            return BadRequest();//status code 400
-        }
-
-        if (string.IsNullOrEmpty(request.Email) || _users.Any(a => a.Email == request.Email))
-        {
-            return BadRequest();
-        }
-
-        int atIndex = request.Email.IndexOf('@');
-
-        if (atIndex <= 0 || atIndex != request.Email.LastIndexOf('@'))
-        {
-            return BadRequest();
-        }
-
-        string local = request.Email[..atIndex];
-        string domain = request.Email[(atIndex + 1)..];
-
-        if (domain.Length < 3 || !domain.Contains('.'))
-        {
-            return BadRequest();
-        }
-
-        string topLevelDomain = (domain.Split('.'))[^1];
-
-        if (topLevelDomain.Length < 2 || topLevelDomain.Length > 6)
-        {
-            return BadRequest();
-        }
-
-        if (!(local.All(l => char.IsLetterOrDigit(l) || l is '.' or '-') && domain.All(l => char.IsLetterOrDigit(l) || l is '.' or '-')))
-        {
-            return BadRequest();
-        }
-
-        if (string.IsNullOrWhiteSpace(request.Password) || request.Password.Length < 8)
-        {
-            return BadRequest();
-        }
-
-        var user = new User()
-        {
-            Id = Guid.NewGuid(),
-            Name = request.Name,
-            Email = request.Email,
-            Password = request.Password
-        };
-
-        _users.Add(user);
-
-        return NoContent();//status code 204
+        _userService = userService;
     }
 
     [HttpPost]
-    [Route("[action]")]
+    public IActionResult Signup(UserCreateRequest request)
+    {
+        try
+        {
+           _userService.SignupUser(request);
+            return NoContent();//status code 204
+        }
+        catch(ArgumentException)
+        {
+            return BadRequest();
+        }
+    }
+
+    [HttpPost]
     public IActionResult Signin(UserSigninRequest request)
     {
-        var user = _users.FirstOrDefault(a => a.Email == request.Email);
-
-        if (user is null)
+        try
         {
-            return NotFound();//status code 404
+            var response = _userService.SigninUser(request);
+            return Ok(response);//status code 200
         }
-        if (!(user.Password.Equals(request.Password)))
+        catch (NullReferenceException)
+        {
+            return NotFound();
+        }
+        catch (ArgumentException)
         {
             return Unauthorized();//status code 401
         }
-        var response = new UserSigninRespons(user.Id, user.Name, user.Email);
-        return Ok(response);//status code 200
+        
     }
 
 }

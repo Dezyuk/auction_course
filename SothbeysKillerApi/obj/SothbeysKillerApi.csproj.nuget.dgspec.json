@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\Desktop\\auction_course-master\\SothbeysKillerApi\\SothbeysKillerApi.csproj": {}
+    "C:\\Users\\roman\\Source\\Repos\\auction_course\\SothbeysKillerApi\\SothbeysKillerApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roman\\Desktop\\auction_course-master\\SothbeysKillerApi\\SothbeysKillerApi.csproj": {
+    "C:\\Users\\roman\\Source\\Repos\\auction_course\\SothbeysKillerApi\\SothbeysKillerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\Desktop\\auction_course-master\\SothbeysKillerApi\\SothbeysKillerApi.csproj",
+        "projectUniqueName": "C:\\Users\\roman\\Source\\Repos\\auction_course\\SothbeysKillerApi\\SothbeysKillerApi.csproj",
         "projectName": "SothbeysKillerApi",
-        "projectPath": "C:\\Users\\roman\\Desktop\\auction_course-master\\SothbeysKillerApi\\SothbeysKillerApi.csproj",
+        "projectPath": "C:\\Users\\roman\\Source\\Repos\\auction_course\\SothbeysKillerApi\\SothbeysKillerApi.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\Desktop\\auction_course-master\\SothbeysKillerApi\\obj\\",
+        "outputPath": "C:\\Users\\roman\\Source\\Repos\\auction_course\\SothbeysKillerApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

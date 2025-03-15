@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ghWnKbRm7es=",
+  "dgSpecHash": "iIDukyTp7/M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\roman\\Desktop\\auction_course-master\\SothbeysKillerApi\\SothbeysKillerApi.csproj",
+  "projectFilePath": "C:\\Users\\roman\\Source\\Repos\\auction_course\\SothbeysKillerApi\\SothbeysKillerApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\roman\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\npgsql\\8.0.7\\npgsql.8.0.7.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
