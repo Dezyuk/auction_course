@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\roman\\source\\repos\\auction_course\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\repository\\dbuserrepostory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\repository\\dbuserrepostory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\dbuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\dbuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,32 +15,28 @@
       "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\dbauctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\dbauctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\repository\\dbauctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\repository\\dbauctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\iauctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\iauctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|c:\\users\\roman\\source\\repos\\auction_course\\sothbeyskillerapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D0F5AB-E1D7-4B0F-B8DF-574AE595F108}|SothbeysKillerApi\\SothbeysKillerApi.csproj|solutionrelative:sothbeyskillerapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,19 +46,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 226,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbUserRepostory.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Repository\\DbUserRepostory.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Repository\\DbUserRepostory.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Repository\\DbUserRepostory.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Repository\\DbUserRepostory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:38:09.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:12:06.56Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DbAuctionService.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\DbAuctionService.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\DbAuctionService.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\DbAuctionService.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Services\\DbAuctionService.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAqwGEAAAAAAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T15:03:56.979Z",
+              "WhenOpened": "2025-03-14T14:19:22.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\IUserService.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T14:22:25.535Z",
               "EditorCaption": ""
             },
             {
@@ -69,104 +122,67 @@
               "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\AuctionService.cs",
               "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\AuctionService.cs",
               "RelativeToolTip": "SothbeysKillerApi\\Services\\AuctionService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwGEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:05:44.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuctionController.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Controllers\\AuctionController.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Controllers\\AuctionController.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Controllers\\AuctionController.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Controllers\\AuctionController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAswGUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:14:08.67Z",
+              "WhenOpened": "2025-03-15T19:35:50.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IAuctionService.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\IAuctionService.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\IAuctionService.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\IAuctionService.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Services\\IAuctionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:16:15.267Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 226,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Program.cs",
               "RelativeDocumentMoniker": "SothbeysKillerApi\\Program.cs",
               "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Program.cs",
               "RelativeToolTip": "SothbeysKillerApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:59:41.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAkwD4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:19:22.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\UserService.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:21:21.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DbUserService.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\DbUserService.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\DbUserService.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\DbUserService.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Services\\DbUserService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAADwv10AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:21:57.744Z",
+              "WhenOpened": "2025-03-14T14:59:41.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\IUserService.cs",
-              "RelativeToolTip": "SothbeysKillerApi\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\UserService.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Services\\UserService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:22:25.535Z"
+              "WhenOpened": "2025-03-14T14:21:21.684Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 226,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbAuctionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Repository\\DbAuctionRepository.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Repository\\DbAuctionRepository.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Repository\\DbAuctionRepository.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Repository\\DbAuctionRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:44:26.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbUserService.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\DbUserService.cs",
+              "RelativeDocumentMoniker": "SothbeysKillerApi\\Services\\DbUserService.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\auction_course\\SothbeysKillerApi\\Services\\DbUserService.cs",
+              "RelativeToolTip": "SothbeysKillerApi\\Services\\DbUserService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwEcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T14:21:57.744Z",
+              "EditorCaption": ""
             }
           ]
         }

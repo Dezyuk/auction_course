@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Npgsql;
 using SothbeysKillerApi.Controllers;
+using SothbeysKillerApi.Repository;
 using System.Data;
 
 namespace SothbeysKillerApi.Services
@@ -9,11 +10,7 @@ namespace SothbeysKillerApi.Services
     {
         private readonly IDbConnection _dbConnection;
 
-        public DbUserService()
-        {
-            _dbConnection = new NpgsqlConnection("Server=localhost;Port=5432;Database=user_db;Username=postgres;Password=123456");
-            _dbConnection.Open();
-        }
+        private readonly IUserRepository _userRepository;
 
         public void SignupUser(UserCreateRequest request)
         {
@@ -22,7 +19,7 @@ namespace SothbeysKillerApi.Services
                 throw new ArgumentException();
             }
 
-            if (string.IsNullOrWhiteSpace(request.Email) || _dbConnection.ExecuteScalar<bool>("select exists(select * from users where email = @Email)", new { Email = request.Email }))
+            if (string.IsNullOrWhiteSpace(request.Email) || _userRepository.EmailExist(request.Email))
             {
                 throw new ArgumentException();
             }
@@ -67,14 +64,12 @@ namespace SothbeysKillerApi.Services
                 Password = request.Password
             };
 
-            var command = $@"insert into users (id, name, email, password) values (@Id, @Name, @Email, @Password);";
-            _dbConnection.ExecuteScalar(command, user);
+            _userRepository.Create(user);
         }
 
         public UserSigninResponse SigninUser(UserSigninRequest request)
         {
-            var select = "select * from users where email = @Email";
-            var _user = _dbConnection.QuerySingleOrDefault<User>(select, new { Email = request.Email });
+            var _user = _userRepository.Signin(request.Email);
 
             if (_user is null)
             {
