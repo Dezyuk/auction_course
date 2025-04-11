@@ -80,11 +80,11 @@ namespace SothbeysKillerApi.Services
 
             if (_user is null)
             {
-                throw new UserValidationExceprion(nameof(request.Email), "Invalid Email.");
+                throw new UserNotFoundException(nameof(request.Email), "Invalid Email.");
             }
             if (!(_user.Password.Equals(request.Password)))
             {
-                throw new UserValidationExceprion(nameof(request.Password), "Invalid Password.");
+                throw new UserUnautorizedException(nameof(request.Password), "Invalid Password.");
             }
 
             var response = new UserSigninResponse(_user.Id, _user.Name, _user.Email);
