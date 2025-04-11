@@ -33,34 +33,16 @@ public class UserController : ControllerBase
     [HttpPost]
     public IActionResult Signup(UserCreateRequest request)
     {
-        try
-        {
-           _userService.SignupUser(request);
-            return NoContent();//status code 204
-        }
-        catch(ArgumentException)
-        {
-            return BadRequest();
-        }
+        _userService.SignupUser(request);
+        return NoContent();//status code 204
     }
 
     [HttpPost]
     public IActionResult Signin(UserSigninRequest request)
     {
-        try
-        {
-            var response = _userService.SigninUser(request);
-            return Ok(response);//status code 200
-        }
-        catch (NullReferenceException)
-        {
-            return NotFound();
-        }
-        catch (ArgumentException)
-        {
-            return Unauthorized();//status code 401
-        }
-        
+        var response = _userService.SigninUser(request);
+        return Ok(response);
+
     }
 
 }

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SothbeysKillerApi.Context;
+using SothbeysKillerApi.ExceptionHandlers;
 using SothbeysKillerApi.Repository;
 using SothbeysKillerApi.Services;
 
@@ -23,6 +24,14 @@ builder.Services.AddTransient<IUserService, DbUserService>();
 
 builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
 
+
+builder.Services.AddExceptionHandler<UserValidationExceptionHandler>();
+builder.Services.AddExceptionHandler<UserNotFoundExceptionHandler>();
+builder.Services.AddExceptionHandler<UserUnautorizedExceptionHandler>();
+builder.Services.AddExceptionHandler<ServerExceptionsHandler>();
+
+builder.Services.AddProblemDetails();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,6 +44,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseExceptionHandler();
 
 app.MapControllers();
 

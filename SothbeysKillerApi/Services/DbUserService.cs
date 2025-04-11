@@ -2,6 +2,7 @@
 using Npgsql;
 using SothbeysKillerApi.Context;
 using SothbeysKillerApi.Controllers;
+using SothbeysKillerApi.Exceptions;
 using SothbeysKillerApi.Repository;
 using System.Data;
 
@@ -22,19 +23,19 @@ namespace SothbeysKillerApi.Services
         {
             if (string.IsNullOrWhiteSpace(request.Name) || request.Name.Length < 3 || request.Name.Length > 255)
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Name), "Invalid Name.");
             }
 
             if (string.IsNullOrWhiteSpace(request.Email) || _unitOfWork.UserRepository.EmailExist(request.Email))
             {
-                throw new ArgumentException();
+                 throw new UserValidationExceprion(nameof(request.Email), "Invalid Email."); 
             }
 
             int atIndex = request.Email.IndexOf('@');
 
             if (atIndex <= 0 || atIndex != request.Email.LastIndexOf('@'))
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Email), "Invalid Email.");
             }
 
             string local = request.Email[..atIndex];
@@ -42,24 +43,24 @@ namespace SothbeysKillerApi.Services
 
             if (domain.Length < 3 || !domain.Contains('.'))
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Email), "Invalid Email.");
             }
 
             string topLevelDomain = (domain.Split('.'))[^1];
 
             if (topLevelDomain.Length < 2 || topLevelDomain.Length > 6)
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Email), "Invalid Email.");
             }
 
             if (!(local.All(l => char.IsLetterOrDigit(l) || l is '.' or '-') && domain.All(l => char.IsLetterOrDigit(l) || l is '.' or '-')))
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Email), "Invalid Email.");
             }
 
             if (string.IsNullOrWhiteSpace(request.Password) || request.Password.Length < 8)
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Password), "Invalid Password.");
             }
 
             var user = new User()
@@ -79,11 +80,11 @@ namespace SothbeysKillerApi.Services
 
             if (_user is null)
             {
-                throw new NullReferenceException();
+                throw new UserValidationExceprion(nameof(request.Email), "Invalid Email.");
             }
             if (!(_user.Password.Equals(request.Password)))
             {
-                throw new ArgumentException();
+                throw new UserValidationExceprion(nameof(request.Password), "Invalid Password.");
             }
 
             var response = new UserSigninResponse(_user.Id, _user.Name, _user.Email);
