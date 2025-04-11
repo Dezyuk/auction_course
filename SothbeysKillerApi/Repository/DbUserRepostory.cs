@@ -8,16 +8,21 @@ namespace SothbeysKillerApi.Repository
     public class DbUserRepostory : IUserRepository
     {
         private readonly IDbConnection _dbConnection;
-
-        public DbUserRepostory(ILogger<DbAuctionRepository> logger)
+        private readonly IDbTransaction _transaction;
+        public DbUserRepostory(IDbConnection dbConnection, IDbTransaction transaction)
         {
-            _dbConnection = new NpgsqlConnection("Server=localhost;Port=5432;Database=auction_db;Username=postgres;Password=123456");
+
+            _dbConnection = dbConnection;
+
+            _transaction = transaction;
+
             _dbConnection.Open();
+
         }
 
         public bool EmailExist(string email)
         {
-            var query = "select exists(select * from users where email = @Email)";
+            var query = "select exists(select * from Users where email = @Email)";
             var answer = _dbConnection.ExecuteScalar<bool>(query, new { Email = email });
             return answer;
         }

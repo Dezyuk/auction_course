@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SothbeysKillerApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aca42c906a5b023d57dc60f43d07251c2774d868")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b35f3944ef6b271bcdf6b58ad744e219df1aa17")]
 [assembly: System.Reflection.AssemblyProductAttribute("SothbeysKillerApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SothbeysKillerApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

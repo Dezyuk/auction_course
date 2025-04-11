@@ -1,19 +1,27 @@
+using Microsoft.EntityFrameworkCore;
+using SothbeysKillerApi.Context;
 using SothbeysKillerApi.Repository;
 using SothbeysKillerApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
+
+builder.Services.AddDbContext<UserDBContext>(opt =>
+{
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DB"));
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<IAuctionService, DbAuctionService>();
+//builder.Services.AddTransient<IAuctionService, DbAuctionService>();
 builder.Services.AddTransient<IUserService, DbUserService>();
 
-builder.Services.AddTransient<IAuctionRepository, DbAuctionRepository>();
+builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
 
 var app = builder.Build();
 

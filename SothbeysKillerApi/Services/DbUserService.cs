@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Npgsql;
+using SothbeysKillerApi.Context;
 using SothbeysKillerApi.Controllers;
 using SothbeysKillerApi.Repository;
 using System.Data;
@@ -8,9 +9,14 @@ namespace SothbeysKillerApi.Services
 {
     public class DbUserService : IUserService
     {
-        private readonly IDbConnection _dbConnection;
+        private readonly UserDBContext _userDBContext;
+        private readonly IUnitOfWork _unitOfWork;
 
-        private readonly IUserRepository _userRepository;
+        public DbUserService(UserDBContext userDBContext, IUnitOfWork unitOfWork)
+        {
+            _userDBContext = userDBContext;
+            _unitOfWork = unitOfWork;
+        }
 
         public void SignupUser(UserCreateRequest request)
         {
@@ -19,7 +25,7 @@ namespace SothbeysKillerApi.Services
                 throw new ArgumentException();
             }
 
-            if (string.IsNullOrWhiteSpace(request.Email) || _userRepository.EmailExist(request.Email))
+            if (string.IsNullOrWhiteSpace(request.Email) || _unitOfWork.UserRepository.EmailExist(request.Email))
             {
                 throw new ArgumentException();
             }
@@ -63,13 +69,13 @@ namespace SothbeysKillerApi.Services
                 Email = request.Email,
                 Password = request.Password
             };
-
-            _userRepository.Create(user);
+            
+            _unitOfWork.UserRepository.Create(user);
         }
 
         public UserSigninResponse SigninUser(UserSigninRequest request)
         {
-            var _user = _userRepository.Signin(request.Email);
+            var _user = _unitOfWork.UserRepository.Signin(request.Email);
 
             if (_user is null)
             {

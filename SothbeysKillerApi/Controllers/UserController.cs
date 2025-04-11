@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SothbeysKillerApi.Context;
 using SothbeysKillerApi.Services;
 
 namespace SothbeysKillerApi.Controllers;
